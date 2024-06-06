@@ -19,3 +19,6 @@ app.use("/api/messages", messagesRoutes)
 app.listen(3000, () => {
   console.log('Le serveur tourne sur 3000');
 });
+
+// ajouter socket io pour le serveur
+// configurer ce serveur pour le déploiement
