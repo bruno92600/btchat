@@ -13,6 +13,7 @@ type SignupInputs = {
 const useSignup = () => {
   const [loading, setLoading] = useState(false)
   const { setAuthUser } = useAuthContext()
+  
 
   const signup = async (inputs:SignupInputs) => {
     try {
