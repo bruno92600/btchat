@@ -7,7 +7,7 @@ import { AuthContextProvider } from './_ui_design/context/AuthContext.tsx'
 import SocketContextProvider from './_ui_design/context/SocketContext.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+ // <React.StrictMode>
     <BrowserRouter>
       <AuthContextProvider>
         <SocketContextProvider>
@@ -15,5 +15,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         </SocketContextProvider>
       </AuthContextProvider>
     </BrowserRouter>
-  </React.StrictMode>,
+ // </React.StrictMode>,
 )
