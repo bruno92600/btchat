@@ -21,5 +21,4 @@ server.listen(PORT, () => {
   console.log('Le serveur tourne sur ' + PORT);
 });
 
-// ajouter socket io pour le serveur
 // configurer ce serveur pour le déploiement
