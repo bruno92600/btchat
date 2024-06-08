@@ -19,7 +19,7 @@ export const getReceiverSocketId = (receiverId: string) => {
 
 const userSocketMap: { [key: string]: string } = {}
 io.on("connection", (socket) => {
-    console.log("Utilisateur connecter", socket.id);
+    // console.log("Utilisateur connecter", socket.id);
 
     const userId = socket.handshake.query.userId as string;
 
@@ -28,7 +28,7 @@ io.on("connection", (socket) => {
     io.emit("getOnlineUsers", Object.keys(userSocketMap))
 
     socket.on("disconnect", () => {
-        console.log("Utilisateur déconnecter", socket.id);
+        // console.log("Utilisateur déconnecter", socket.id);
         delete userSocketMap[userId]
         io.emit("getOnlineUsers", Object.keys(userSocketMap))
         
